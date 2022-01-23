@@ -57,6 +57,8 @@ var patchFiles = []string{
 	"0201-enable-spidev.patch",
 	// logo
 	"0001-gokrazy-logo.patch",
+	// xr_serial
+	"0001-xr_serial.patch",
 }
 
 func copyFile(dest, src string) error {

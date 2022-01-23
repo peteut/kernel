@@ -17,7 +17,7 @@ import (
 var latest = "https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.16.2.tar.xz"
 
 const configAddendum = `
-CONFIG_ARCH_BCM2835=y 
+CONFIG_ARCH_BCM2835=y
 CONFIG_HW_RANDOM_BCM2835=y
 CONFIG_DMA_BCM2835=y
 CONFIG_I2C_BCM2835=y
@@ -49,6 +49,7 @@ CONFIG_USB_VL600=y
 CONFIG_USB_SERIAL=y
 CONFIG_USB_SERIAL_FTDI_SIO=y
 CONFIG_USB_SERIAL_CP210X=y
+CONFIG_USB_SERIAL_XR_SERIAL=y
 
 # For physically connecting the scan2drive USB LCD:
 CONFIG_USB_ACM=y
