@@ -170,7 +170,7 @@ func main() {
 	cmd.Env = append(os.Environ(), "GOOS=linux", "GOBIN="+tmp)
 	cmd.Stderr = os.Stderr
 	if err := cmd.Run(); err != nil {
-		log.Fatalf("%v: %v", cmd.Args, err)
+		fatal(fmt.Errorf("%v: %v", cmd.Args, err))
 	}
 
 	buildPath := filepath.Join(tmp, "gokr-build-kernel")
